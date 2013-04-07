@@ -192,13 +192,13 @@
 			<p>原来是这样子的：</p>
 			<pre><code>.sidebar_a {</code>
 		<code>background:#ddd;</code>
-		<code>width:100px;</code>
+		<code>width:200px;</code>
 <code>}</code>
 			</pre>
 			<p>然后小G这样改：</p>
 			<pre><code>.sidebar_a {</code>
 		<code>background:#aaa;</code>
-		<code>width:200px;</code>
+		<code>width:100px;</code>
 <code>}</code>
 			</pre>
 		</div>
@@ -206,13 +206,13 @@
 			<p>很明显，这样是很不利扩展的，正确的做法是：</p>
 			<pre><code>.index .sidebar_a {</code>
 		<code>background:#aaa;</code>
-		<code>width:200px;</code>
+		<code>width:100px;</code>
 <code>}</code>
 			</pre>
 			<p>又或者给sidebar_a加个类名“.index_sidebar_a”</p>
 			<pre><code>.index_sidebar_a {</code>
 		<code>background:#aaa;</code>
-		<code>width:200px;</code>
+		<code>width:100px;</code>
 <code>}</code>
 			</pre>
 			<p>记住：软件实体（类，模块，函数等）应对扩展开放，对修改闭合。</p>
