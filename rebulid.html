@@ -159,7 +159,7 @@
 			
 		</div>
 		<div  class="step slide page12" data-x="4000" data-y="-1500"  data-z="16000">
-			<h3>命名（命名空间）</h3>
+			<h3>1.命名（命名空间）</h3>
 			<p>不好的例子</p>
 			<pre><code>.id</code><code>.red</code><code>.top</code><code>.img</code><code>.div</code></pre>
 			<p>较好的例子</p>
@@ -168,18 +168,18 @@
 			<pre><code>.show_content</code><code>.show_nav</code><code>.show_hd</code><code>.show_sidebar</code><code>.show_logo</code></pre>
 		</div>
 		<div class="step slide page13" data-x="6500" data-y="-1500"  data-z="17000">
-			<h3>可重复使用</h3>
+			<h3>2.可重复使用</h3>
 			<p>可重用意味着模块化，批量生产</p>
 			<img src="images/module.png" alt="">
 			<pre><code>.mod_basic</code><code>.mod_primary</code><code>.gb_nav</code><code>.gb_sidebar</code></pre>
 		</div>
 		<div class="step slide page14" data-x="9000" data-y="-1500"  data-z="18000">
-			<h3>可维护</h3>
+			<h3>3.可维护</h3>
 			<p>可维护的前提是，模块化和标准化</p>
 			<img src="images/fixable.jpg" alt="">
 		</div>
 		<div class="step slide page15" data-x="11500" data-y="-1500"  data-z="19000">
-			<h3>可扩展</h3>
+			<h3>4.可扩展</h3>
 			<p>举个栗子</p>
 			<img src="images/exp.jpg" alt="">
 		</div>
@@ -193,22 +193,20 @@
 			<pre><code>.sidebar_a {</code>
 		<code>background:#ddd;</code>
 		<code>width:100px;</code>
-		<code>blablabla.....</code>
 <code>}</code>
 			</pre>
 			<p>然后小G这样改：</p>
 			<pre><code>.sidebar_a {</code>
 		<code>background:#aaa;</code>
 		<code>width:200px;</code>
-		<code>blablabla.....</code>
 <code>}</code>
 			</pre>
 		</div>
 		<div class="step slide page18" data-x="19000" data-y="-1500"  data-z="22000">
 			<p>很明显，这样是很不利扩展的，正确的做法是：</p>
 			<pre><code>.index .sidebar_a {</code>
-		<code>background:#ddd;</code>
-		<code>width:100px;</code>
+		<code>background:#aaa;</code>
+		<code>width:200px;</code>
 <code>}</code>
 			</pre>
 			<p>又或者给sidebar_a加个类名“.index_sidebar_a”</p>
